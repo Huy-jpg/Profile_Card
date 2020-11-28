@@ -1,0 +1,192 @@
+:root{
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --font-size: 18px;
+  --font-fam: 'Kumbh Sans', sans-serif;
+  --p-font: 15px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  ======================================= 
+  style for body background and no scroll
+  =======================================
+*/
+body{
+  background-color: var(--Dark-cyan);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+/*
+  ======================================= 
+  style for 2 images (circles)
+  =======================================
+*/
+.top{
+  height: 110%;
+  width: 60%;
+  top: -50%;
+  left: -15%;
+  display: block;
+  position: absolute;
+}
+
+.bottom{
+  height: 95%;
+  width: 70%; 
+  top: 50%;
+  right: -20%;
+  position: absolute;
+  display: block;
+}
+
+/*
+  ======================================= 
+  style for profile card
+  middle and top background
+  =======================================
+*/
+
+.card{
+  height: 374px;
+  width: 354px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 18px;
+  border-top-width: 50%;
+}
+
+.card-background{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px 18px 0px 0px ;
+}
+
+/*
+  ======================================= 
+  style for profile image
+  =======================================
+*/
+
+.profile-img{
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  border: 5px solid white;
+}
+
+/*
+  ======================================= 
+  style for name, place, and age
+  =======================================
+*/
+
+h1{
+  position: absolute;
+  font-family: var(--font-fam);
+}
+
+.name{
+  color: var(--Very-dark-desaturated-blue);
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--font-size);
+}
+
+.name span{
+  font-weight: lighter;
+  color: var(--Dark-gray);
+  margin-left: 10px;
+}
+
+.place{
+  font-weight: 400;
+  color: var(--Dark-gray);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/*
+  ======================================= 
+  style for bottom of profile
+  =======================================
+*/
+
+.info{
+  position: absolute;
+  height: 90px;
+  width: 354px;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  top: 80%;
+}
+/*
+  ======================================= 
+  style for the 3 info.
+  =======================================
+*/
+.followers, .likes, .photos{
+  font-size: var(--font-size);
+  position: absolute;
+}
+
+.followers{
+  left: 23%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+.followers p{
+  color: var(--Dark-gray);
+  position: absolute;
+  font-weight: 400;
+  transform: translateY(30%);
+  font-size: var(--p-font);
+  left: -70%;
+  letter-spacing: 1.5px;
+}
+
+.likes{
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+.likes p{
+  letter-spacing: 1.5px;
+  font-size: var(--p-font);
+  position: absolute;
+  color: var(--Dark-gray);
+  font-weight: 400;
+  transform: translateY(30%);
+  left: 10%;
+}
+
+.photos{
+  left: 70%;
+  top: 20%;
+}
+.photos p{
+  letter-spacing: 1.5px;
+  position: absolute;
+  font-size: var(--p-font);
+  color: var(--Dark-gray);
+  font-weight: 400;
+  left: -20%;
+  transform: translateY(30%);
+}
