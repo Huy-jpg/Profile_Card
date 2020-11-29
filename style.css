@@ -169,8 +169,8 @@ body{
   display: inline-block;
   position: relative;
   font-size: 16px;
-  left: 35%;
-  margin-top: 27%;
+  left: 45%;
+  margin-top: 10%;
 }
 .challenger a{
   color: var(--Dark-grayish-blue);
@@ -183,7 +183,7 @@ body{
   position: relative;
   display: block;
   font-size: 16px;
-  left: 38%;
+  left: 46.35%;
   margin-top: 10px;
 }
 .contestant a{
