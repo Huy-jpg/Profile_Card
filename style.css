@@ -166,11 +166,11 @@ body{
 
 .challenger{
   font-family: var(--font-fam);
-  position: absolute;
+  display: inline-block;
+  position: relative;
   font-size: 16px;
-  top: 90%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 35%;
+  margin-top: 27%;
 }
 .challenger a{
   color: var(--Dark-grayish-blue);
@@ -180,11 +180,11 @@ body{
 
 .contestant{
   font-family: var(--font-fam);
-  position: absolute;
+  position: relative;
+  display: block;
   font-size: 16px;
-  top: 93%;
-  left: 48.7%;
-  transform: translateX(-50%);
+  left: 38%;
+  margin-top: 10px;
 }
 .contestant a{
   color: var(--Dark-grayish-blue);
